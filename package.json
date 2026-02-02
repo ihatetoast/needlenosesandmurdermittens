@@ -1,13 +1,14 @@
 {
-  "name": "needlenosesandmurdermittens_me",
+  "name": "needlenosesandmurdermittens",
   "version": "1.0.0",
-  "description": "",
+  "description": "static site for greyhound fostering with cats",
   "main": "index.js",
   "scripts": {
+    "start": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Katy Cassidy",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
