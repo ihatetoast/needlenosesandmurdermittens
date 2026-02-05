@@ -1,4 +1,5 @@
 {
   "layout": "post.njk",
-  "permalink": "/posts/{{ dog | slug }}-{{ title | slugify }}/"
+  "permalink": "/posts/{{ dog | slug }}-{{ title | slugify }}/",
+  "tags": ["posts"]
 }

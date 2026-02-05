@@ -1,4 +1,108 @@
+:root {
+  --serif: 'Alice', serif;
+  --sans-serif: 'Lato', sans-serif;
+  --title: 'Sacramento', 'Alice', cursive;
+
+  --test-border1: 1px solid chartreuse;
+  --test-border2: 1px solid rebeccapurple;
+  --test-border3: 1px solid orangered;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+    max-width: 100vw; /* Add this */
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  position: relative;
+  width: 100%;
+background-color: blueviolet;
+
+
+}
+
+.header-title {
+  text-align: center;
+  line-height: 1;
+  font-size: 2rem;
+}
+
+.base-header,
+.header-title {
+  font-family: var(--title);
+}
+
+/* MAIN */
+
+
+.base-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Add this */
+  overflow: hidden; /* Add this to clip anything that escapes */
+}
+
+.main-feed {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  .main-feed {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .main-feed {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* IMAGES */
+.image-container,
+.main-page-image-container {
+  width: 300px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.image-container img,
+.main-page-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ARTICLE */
+.article-title {
+  font-family: var(--title);
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
 }

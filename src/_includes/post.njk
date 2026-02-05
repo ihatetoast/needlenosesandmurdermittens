@@ -3,12 +3,15 @@ layout: base.njk
 ---
 
 <article>
-  <h1>{{ title }}</h1>
+  <h1 class="article-title">{{ title }}</h1>
   {% if image %}
-  <img src="{{ image }}" alt="{{ title }}" width="600" />
+  <div class="image-container">
+    <img src="{{ image }}" alt="{{ title }}"/>
+  </div>
+  
   {% endif %}
 
-  <div>
+  <div class="article-content">
     {{ content | safe }}
   </div>
 </article>
