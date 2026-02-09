@@ -1,10 +1,17 @@
 <header>
-  <p class="header-title">Needle Noses <br class="hide-on-desk"/> &amp;<br class="hide-on-desk"/> Murder Mittens</p>
-  <nav class="header-nav">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/lists">FAQs &amp; SNAQs</a>
-  </nav>
-
-  
+  <h1 class="header-title">Needle Noses <br class="hide-on-desk"/> &amp;<br class="hide-on-desk"/> Murder Mittens</h1>
+{% set currentUrl = page.url %}
+<nav>
+  <ul role="list">
+    <li>
+      <a {% if page.url == '/' %}aria-current="page"{% endif %} href="/">Home</a>
+    </li>
+    <li>
+      <a {% if page.url == '/foster-notes/' %}aria-current="page"{% endif %} href="/foster-notes/">Foster Notes</a>
+    </li>
+    <li>
+      <a {% if page.url == '/faqs-and-snaqs/' %}aria-current="page"{% endif %} href="/faqs-and-snaqs/">FAQs &amp; SNAQs</a>
+    </li>
+  </ul>
+</nav>
 </header>

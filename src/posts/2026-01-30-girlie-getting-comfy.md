@@ -1,8 +1,8 @@
 ---
-title: "Girlie: Getting settled"
+title: Girlie's settling in
 date: 2026-01-30
 dog: Girlie
-tags: [aussies]
+tags: [Aussies]
 status: final
 image: "/images/girlie-treadmill.jpg"
 ---

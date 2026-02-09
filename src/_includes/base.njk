@@ -13,13 +13,8 @@
   <body>
     {% include "header.njk" %}
       <main class="base-main">
-        <section class="main-description">
-          <p>something about this page</p>
-        </section>
-        <section class="main-feed">
-           {{ content | safe }}
-        </section>
-       </main>
+          {{ content | safe }}
+      </main>
     {% include "footer.njk" %}
   </body>
 </html>

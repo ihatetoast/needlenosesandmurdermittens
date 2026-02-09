@@ -2,7 +2,7 @@
 title: Slow and steady
 date: 2026-02-04
 dog: Girlie
-tags: [cat-testing, aussies]
+tags: [cat-testing, Aussies]
 status: final
 image: "/images/girlie-sits.jpg"
 ---

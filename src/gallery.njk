@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: Gallery
+---
+
+<section class="gallery-grid">
+  {% for photo in gallery %}
+  <div>
+    <figure class="gallery-item">
+      <img src="{{ photo.image }}" alt="{{ photo.alt }}" />
+      <figcaption>{{ photo.title }}</figcaption>
+    </figure>
+  </div>
+  {% endfor %}
+</section>
