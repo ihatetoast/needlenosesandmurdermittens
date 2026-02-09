@@ -3,10 +3,14 @@ layout: base.njk
 title: Gallery
 ---
 
+  <div class="intro">
+    <blockquote>Human sacrifice, dogs and cats living together—mass hysteria!</blockquote>
+    <cite>~ Dr. Peter Venkman</cite>
+  </div>
 <section class="gallery-grid">
   {% for photo in gallery %}
-  <div>
-    <figure class="gallery-item">
+  <div class="gallery-item">
+    <figure>
       <img src="{{ photo.image }}" alt="{{ photo.alt }}" />
       <figcaption>{{ photo.title }}</figcaption>
     </figure>

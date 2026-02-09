@@ -3,19 +3,20 @@ layout: base.njk
 title: Foster Notes
 ---
 
-<section class="main-feed-grid">
+<section class="feed-grid">
 {% set reversedPosts = collections.post | reverse %}
 {% for post in reversedPosts %}
-  <article class="main-page-article">
-    <h2 class="post-data-title">
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </h2>
-    <p>{{ post.data.date | postDate }}</p>
+  <article class="feed-card">
+    <a href="{{ post.url }}">
     {% if post.data.image %}
-      <div class="main-page-image-container">
+      <div class="feed-card-image-container">
         <img src="{{ post.data.image }}" alt="{{ post.data.title }}" />
       </div>
     {% endif %}
+    <div class="feed-text">
+      <h2>{{ post.data.title }}</h2>
+      <p class="feed-card-date">{{ post.data.date | postDate }}</p>
+    </div></a>
   </article>
 {% endfor %}
 </section>

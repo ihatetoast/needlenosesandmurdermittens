@@ -1,12 +1,23 @@
 [
   {
-    "image": "/images/gallery/fat-bastard-with-fabian.jpg",
-    "title": "Fat Bastard and Fabian spooning",
-    "alt": "THIS IS DUMMY STUFF. DO LATER. 9-18 PHOTOS"
+    "image": "/images/gallery/tg-sp-face-mittens.jpg",
+    "title": "Face mittens are safe mittens",
+    "alt": "striped cat paws reaching out onto a saluki face"
   },
   {
-    "image": "/images/gallery/sierra-somthing.jpg",
-    "title": "OF CATS AND GREYHOUNDS",
-    "alt": "calico cat ..."
+    "image": "/images/gallery/jill-timtam-1.jpg",
+    "title": "TimTam really tests Jill",
+    "alt": "A cat rolling on the floor while a black greyhound looks over her"
+  },
+  {
+    "image": "/images/gallery/tg-jill-timtam-2.jpg",
+    "title": "Dog bed? Not when a cat's around",
+    "alt": "Two dogs and one cat on beds"
+  },
+  {
+    "image": "/images/gallery/tg-jill-timtam.jpg",
+    "title": "If you can share, be as close as possible",
+    "alt": "Two dogs and one cat on beds"
   }
+
 ]

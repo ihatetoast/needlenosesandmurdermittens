@@ -2,8 +2,10 @@
 layout: base.njk
 title: FAQs and SNAQs
 ---
+# Currently a work in progress. Check back soon, ya goon.
 
-## FAQs
+
+## FAQs 
 - one
 - another
 - more
