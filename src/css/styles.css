@@ -263,6 +263,18 @@ footer {
   line-height: 1.5;
 }
 
+.post-content p:has(img) {
+  text-align: center;
+}
+
+.post-content p:has(img) img {
+  border-radius: 5px;
+  width: 90%;
+  max-width: 650px;
+}
+
+
+
 .post-image-container {
   width: 300px;
   aspect-ratio: 1 / 1;
