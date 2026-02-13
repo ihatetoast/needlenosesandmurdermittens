@@ -263,6 +263,8 @@ footer {
   line-height: 1.5;
 }
 
+/* IMAGES IN POST  */
+/* if markdown (solo image)  */
 .post-content p:has(img) {
   text-align: center;
 }
@@ -270,10 +272,29 @@ footer {
 .post-content p:has(img) img {
   border-radius: 5px;
   width: 90%;
-  max-width: 650px;
+  max-width: 450px;
 }
 
+/* if more than one, using html  */
+.post-image-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
+}
 
+.post-img-container {
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.post-img-container img {
+  width: 100%;
+  object-fit: contain;
+}
 
 .post-image-container {
   width: 300px;
@@ -314,6 +335,8 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
+
 
 /* GALLERY  */
 .intro {
@@ -379,7 +402,7 @@ ul {
   }
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .feed-grid,
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -404,9 +427,14 @@ ul {
   .post-title {
     font-size: 2rem;
   }
+
+    .post-image-row {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
-@media (min-width: 900px) {
+@media screen and (min-width: 900px) {
   .feed-card {
     width: 400px;
   }
